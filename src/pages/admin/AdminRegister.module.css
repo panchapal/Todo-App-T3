@@ -1,0 +1,121 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.registerPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        90deg,
+        rgba(238, 234, 245, 1) 0%,
+        rgba(242, 239, 235, 1) 93%
+      );
+    padding: 20px;
+}
+
+.registerContainer {
+    display: flex;
+    /* align-items: stretch;  */
+    justify-content: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 900px;
+    /* padding: 0; */
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.registerContainer:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.registerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%; /* Occupies 40% of the container */
+    background: linear-gradient(135deg, #b89aff, #c4ccfa);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 40px;
+    color: white;
+    /* box-shadow: inset 0 5px 15px rgba(255, 120, 150, 0.4); */
+}
+
+/* 🌟 Typography */
+.title {
+    font-family: "Kanit", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(15, 15, 15);
+    margin-bottom: 15px;
+}
+
+.description {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: rgb(45, 42, 42);
+    line-height: 1.6;
+}
+
+.registerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 86%;
+    padding: 40px;
+}
+
+.registerFormBox {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.registerFormBox h4{
+    font-family: "Kanit", sans-serif;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    font-family: "Raleway", sans-serif;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .registerContainer {
+        flex-direction: column;
+    }
+
+    .registerText {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+        padding: 30px;
+    }
+
+    .registerForm {
+        width: 100%;
+        padding: 30px;
+    }
+}

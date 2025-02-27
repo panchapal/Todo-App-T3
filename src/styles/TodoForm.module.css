@@ -1,0 +1,91 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formContainer .heading {
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #121213;
+    margin-bottom: 16px;
+  }
+  
+  .formContainer .textField {
+    margin-bottom: 16px;
+  }
+
+  .formContainer .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .formContainer .submitButton {
+    font-family: "Raleway", sans-serif;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    background-color: #3f51b5;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .formContainer .submitButton:hover {
+    background-color: #303f9f;
+  }
+  
+  @media (max-width: 600px) {
+    .formContainer {
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    .formContainer .heading {
+      font-size: 20px;
+    }
+  
+    .formContainer .textField {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .formContainer .submitButton {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .formContainer {
+      padding: 16px;
+      gap: 12px;
+    }
+  
+    .formContainer .heading {
+      font-size: 1.4rem;
+    }
+  
+    .formContainer .textField {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .formContainer .submitButton {
+      padding: 10px;
+      font-size: 13px;
+    }
+  }

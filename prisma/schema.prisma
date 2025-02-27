@@ -1,0 +1,61 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id           String    @id @default(uuid())
+  name         String
+  email        String    @unique
+  password     String
+  role         Role      @default(USER)
+  permissions  Json?      // ✅ Permissions stored as JSON array
+  todos        Todo[]
+  activities   Activity[]
+}
+
+model Todo {
+  id          String    @id @default(uuid())
+  title       String
+  description String?
+  completed   Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  userId      String
+  user        User      @relation(fields: [userId], references: [id])
+  tags        String?   // For categorizing tasks
+  deadline    DateTime? // For setting task deadlines
+  reminder    DateTime? // For setting task reminders
+}
+
+model Activity {
+  id         String   @id @default(cuid())
+  userId     String
+  action     String
+  targetId   String?
+  targetType String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  user       User     @relation(fields: [userId], references: [id])
+
+  @@index([userId])
+  @@index([createdAt])
+}
+
+// ✅ Updated Role enum to include SUBADMIN
+enum Role {
+  USER
+  ADMIN
+  SUBADMIN
+}
+
+// ✅ New permission types stored as JSON
+enum PermissionType {
+  VIEW
+  EDIT
+  DELETE
+}

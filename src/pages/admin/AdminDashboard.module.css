@@ -1,0 +1,409 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.mainContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: "Raleway", sans-serif;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+  margin-left: 250px;
+  transition: margin-left 0.3s ease-in-out;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+  font-family: "Raleway", sans-serif;
+
+}
+
+.content .appBar {
+  background: linear-gradient(180deg, #4f46e5 0%, #4338ca 100%);
+  color: #111827;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.content .menuButton {
+  margin-right: 16px;
+  font-size: 18px;
+  color: #6366f1;
+}
+
+.content .adminName {
+  font-family: "Raleway", sans-serif;
+  margin-left: auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f2f4f7;
+  letter-spacing: 0.5px;
+}
+
+ .sidebar {
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(180deg, #4f46e5 0%, #4338ca 100%);
+  color: #e0e7ff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  box-shadow: 4px 0 10px rgba(79, 70, 229, 0.1);
+}
+
+.content .sidebar svg {
+  color: #e0e7ff;
+}
+
+.content .toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.content .sidebar li {
+  transition: all 0.2s;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  margin: 0.25rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.content .sidebar li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.content .sidebar li[aria-selected="true"] {
+  background: linear-gradient(90deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  font-weight: 600;
+}
+
+.content .logoutButton {
+  font-family: "Raleway", sans-serif;
+  margin-top: auto;
+  color: #fecaca;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.content .logoutButton:hover {
+  background-color: rgba(254, 202, 202, 0.1);
+  transform: translateY(-2px);
+}
+
+.content .tableContainer {
+  margin-top: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.025);
+  overflow: auto;
+  max-height: 500px;
+  padding: 1.5rem;
+}
+
+.content .tableHeader th {
+  font-family: "Raleway", sans-serif;
+  background-color: #eef2ff;
+  color: #4338ca;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.content .tableTitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.content .tableTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 110px;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 3px;
+}
+
+.content .editButton,
+.content .deleteButton {
+  margin: 5px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-size: 0.875rem;
+}
+
+.content.editButton {
+  font-family: "Raleway", sans-serif;
+  background-color: #6366f1;
+  color: white;
+}
+
+.content .editButton:hover {
+  background-color: #4f46e5;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.content .deleteButton {
+  font-family: "Raleway", sans-serif;
+  background-color: #ef4444;
+  color: white;
+}
+
+.content .deleteButton:hover {
+  background-color: #dc2626;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+}
+
+.content .statsContainer {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.content .statsContainer > div > div {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.2), 0 4px 6px -2px rgba(99, 102, 241, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.content .statsContainer > div:nth-child(2) > div {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+
+.content .statsContainer > div:nth-child(3) > div {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+}
+
+.content .statsContainer > div:nth-child(4) > div {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+.content .statsContainer > div > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.content .statsContainer > div > div:hover::before {
+  opacity: 1;
+}
+
+.content .statsContainer h6 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.content .statsContainer h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+.statsContainer > div > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.2), 0 10px 10px -5px rgba(99, 102, 241, 0.1);
+}
+
+.content .statsContainer1 {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.content .statsContainer1 > div {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.content .statsContainer1 > div > div {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.2), 0 4px 6px -2px rgba(99, 102, 241, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+}
+
+.content .statsContainer1 > div:nth-child(2) > div {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+
+.content .statsContainer1 > div:nth-child(3) > div {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+}
+
+.content.statsContainer1 > div:nth-child(4) > div {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+.content .content .statsContainer1 > div > div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.content .statsContainer1 > div > div:hover::before {
+  opacity: 1;
+}
+
+.content .statsContainer1 h6 {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.content .statsContainer1 h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 960px) {
+  .content {
+    margin-left: 0;
+    padding: 1.5rem;
+  }
+  
+  .content .statsContainer {
+    flex-wrap: wrap;
+  }
+  
+  .content .statsContainer > div {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 1rem;
+    border-radius: 0;
+  }
+  
+  .content .tableContainer {
+    padding: 1rem;
+    width: 460px;
+  }
+  .content .tableHeader th {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .content .statsContainer > div {
+    flex: 0 0 100%;
+  }
+  .content .statsContainer h6 {
+    font-size: 2rem;
+  }
+  
+  .content .statsContainer h4 {
+    font-size: 2.6rem;
+  }
+  
+  .content .statsContainer1 {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .content .statsContainer1 > div {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+  }
+
+  .content .statsContainer1 > div > div {
+    display: flex;
+    justify-content: center; 
+    width: 80%;
+    max-width: 400px;
+    /* padding: 1rem;
+    margin: 0 auto;  */
+  }
+
+  .content .statsContainer1 h6 {
+    font-size: 1.2rem;
+  }
+
+  .content .statsContainer1 h4 {
+    font-size: 1.6rem;
+  }
+  .content .tableTitle {
+    font-size: 2.25rem;
+  }
+  
+  .content .editButton,
+  .content .deleteButton {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .sidebar {
+    width: 100%;
+  }
+}
+

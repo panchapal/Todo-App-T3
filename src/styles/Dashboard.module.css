@@ -1,0 +1,125 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  /* background: #f8f9fa; */
+  border-radius: 12px;
+  /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); */
+  animation: fadeIn 0.5s ease-in-out;
+  margin-top: 80px;
+}
+
+
+.welcomeSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1976d2, #42a5f5);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .userName {
+  font-size: 1.8rem;
+  font-family: "Kanit", sans-serif;
+}
+
+.container .userEmail {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+
+/* Todo Header */
+.container .todoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .todoHeader h4 {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.container .addButton {
+  font-family: "Kanit", sans-serif;
+  background: linear-gradient(135deg, #0288d1, #03a9f4);
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.container .addButton:hover {
+  background: linear-gradient(135deg, #026aa7, #0288d1);
+  transform: scale(1.05);
+}
+
+.container .contentWrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.container .errorMessage {
+  color: #d32f2f;
+  background: #ffebee;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .welcomeSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container .todoHeader {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container .addButton {
+    width: 100%;
+  }
+}

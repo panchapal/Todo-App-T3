@@ -1,0 +1,133 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.navbar {
+  background-color: #eaeaef; 
+  /* padding: 12px 20px; */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #0c0c0c; 
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.title:hover {
+  color: #f39c12;
+}
+
+.menuItems {
+  display: flex;
+  gap: 20px;
+}
+
+.navButton {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #201f1f; 
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.navButton:hover {
+  color: #f39c12; 
+  transform: scale(1.1);
+}
+
+.authButtons {
+  display: flex;
+  gap: 15px;
+}
+
+.logoutButton {
+  width: 100%;
+  padding: 6px 16px;
+  background-color: rgb(250, 64, 98);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.registerButton {
+  width: 100%;
+  padding: 6px 16px;
+  background-color: rgb(89, 64, 250);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+ .registerButton:hover {
+  background-color: rgb(72, 50, 200);
+  transform: scale(1.05);
+}
+.logoutButton:hover {
+  background-color: #e74c3c; 
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.menuButton {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+    color: #f1f1f1;
+  }
+
+  .menuItems,
+  .authButtons {
+    display: none;
+  }
+}
+
+.drawerList {
+  width: 250px;
+  background-color: #222845; 
+  height: 100%;
+  color: #fff;
+}
+
+.drawerList .MuiListItemButton-root {
+  padding: 12px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.drawerList .MuiListItemText-root {
+  font-size: 1.2rem;
+}
+
+.drawerList .MuiListItemButton-root:hover {
+  background-color: #f39c12; 
+  color: #1a1a2e; 
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+}
