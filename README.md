@@ -11,7 +11,7 @@ The To-Do Web App is a task management system where users can create, update, de
 <img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/5.png"/>
 <img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/6.png"/>
 <img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/7.png"/>
-<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/Untitled%20design.mp4"/>
+<video src="https://github.com/panchapal/Todo-App-T3/raw/main/public/images/Untitled%20design.mp4" controls></video>
 
 
 
