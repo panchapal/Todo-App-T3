@@ -4,12 +4,13 @@ The To-Do Web App is a task management system where users can create, update, de
 
 ### Weblink: [Live Website](https://github.com/panchapal/Todo-App-T3)
 ## Some Images:
-<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/Screenshot%202025-02-27%20201259.png"/>
-<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/Screenshot%202025-02-27%20201330.png"/>
-<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/Screenshot%202025-02-27%20201354.png"/>
-<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/Screenshot%202025-02-27%20201452.png"/>
-<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/Screenshot%202025-02-27%20201531.png"/>
-<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/Screenshot%202025-02-27%20201628.png"/>
+<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/1.png"/>
+<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/2.png"/>
+<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/3.png"/>
+<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/4.png"/>
+<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/5.png"/>
+<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/6.png"/>
+<img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/7.png"/>
 <img width="450px;" src="https://github.com/panchapal/Todo-App-T3/blob/main/public/images/Untitled%20design.mp4"/>
 
 
