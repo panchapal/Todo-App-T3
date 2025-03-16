@@ -43,3 +43,8 @@ The Todo App is a full-stack task management system built with the T3 Stack (Nex
 <br/>🚀 Hosting: Vercel / AWS – Scalable and high-performance deployment
 <br/>📦 State Management: React Query (via tRPC) – Optimized data fetching and cach
 
+
+
+📜 Copyright Notice
+
+© 2025 [PANCHANAN PAL]. All rights reserved. This app and its contents are the intellectual property of [PANCHANAN PAL] and may not be copied, modified, or distributed without permission.
