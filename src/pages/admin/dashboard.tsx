@@ -2988,7 +2988,7 @@ import {
   Cell,
   ResponsiveContainer,
 } from "recharts";
-// import { PermissionType } from "@prisma/client";
+import { PermissionType } from "@prisma/client";
 
 const drawerWidth = 250;
 
